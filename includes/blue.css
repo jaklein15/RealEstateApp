@@ -47,14 +47,14 @@ div.ui-controlgroup-label {
 /*App menu*/
 .apptitle{
 	height: 33%;
-	margin-top: 20px;
-	font-size: 28px;
+	margin-top: 33%;
+	font-size: 48px;
 	text-align: center;
 }
 
 .appmenu{
 	height: 67%;
-	font-size: 16px;
+	font-size: 32px;
 	text-align: center;
 }
 
@@ -63,7 +63,7 @@ div.ui-controlgroup-label {
 .ui-footer
 {
 	padding: 5px;
-	font-size: 28px;
+	font-size: 32px;
 	text-align: center;
 	border: none;
 }

@@ -165,8 +165,8 @@ font-weight:700;
 }
 
 .ui-page-theme-a a,html .ui-bar-a a,html .ui-body-a a,html body .ui-group-theme-a a {
-color:#F2F2F2;
-font-weight:700;
+	color: #F2F2F2;
+	font-weight: 100;
 }
 
 .ui-page-theme-a a:visited,html .ui-bar-a a:visited,html .ui-body-a a:visited,html body .ui-group-theme-a a:visited {
