@@ -31,7 +31,6 @@ p {
 	color: #F2F2F2;
 	text-decoration: none;
 	text-shadow: none;
-	font-weight: normal;
 }
 
 p a:link, a:visited {
@@ -54,7 +53,7 @@ p a:link, a:visited {
 
 .homepage_menu {
 	color: #F2F2F2;
-	font-size: 48px;
+	font-size: 32px;
 	font-decoration: none;
 	text-align:center;
 	height: 66%;
@@ -64,6 +63,7 @@ p a:link, a:visited {
 	color: #F2F2F2;
 	font-size: 32px;
 	font-decoration: none;
+	text-shadow: none;
 	text-align:center;
 	background-color: #1C75BC;
 	padding: 12px;;
