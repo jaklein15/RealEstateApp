@@ -41,6 +41,7 @@ div.ui-controlgroup-label {
 
 .ui-page{
 	height: 50%;
+	width: 100%;
 	display: table-cell;
 	vertical-align: middle;
 }
@@ -48,26 +49,49 @@ div.ui-controlgroup-label {
 /*Home Page*/
 
 /*App menu*/
-.apptitle{
+.maintitle{
 	height: 33%;
-	font-size: 48px;
+	font-size: 3em;
 	text-align: center;
 }
 
-.appmenu{
+.mainmenu{
 	height: 25%;
-	font-size: 32px;
+	font-size: 2.5em;
 	text-align: center;
 }
 
 /*Header and Footer*/
-.ui-header,
-.ui-footer
+.header
 {
-	padding: 5px;
-	font-size: 32px;
+	font-size: 2.5em;
 	text-align: center;
-	border: none;
+	background-color: #1C75BC;
+	height: 1.5em;
+}
+
+/*Edit Page*/
+
+hr{
+	border-color:  #1C75BC;
+	
+}
+
+.photo{
+	height: 18em;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #1C75BC; 
+}
+
+.rating{
+	height: 2em;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.address{
 }
 
 

@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>jQuery Mobile Web App</title>
+<title>Real Estate App</title>
 <link rel="stylesheet" href="includes/blue.css" />
 <link rel="stylesheet" href="includes/blue.min.css" />
 <link rel="stylesheet" href="includes/jquery.mobile.icons.min.css" />
@@ -13,30 +13,49 @@
 <body> 
 
 <div data-role="page" id="homepage">
-    <div class="apptitle"><p>my home<p></div>
-    <div class="appmenu">	
+    <div class="maintitle"><p>my home<p></div>
+    <div class="mainmenu">	
         <p><a href="#editpage">new</a><p>
         <p><a href="#existingpage">existing</a></p>
     </div>
 </div>
 
 <div data-role="page" id="editpage">
-	<div data-role="header">my new home</div>
-	<div data-role="content">	
-		Content		
-	</div>
-	<div data-role="footer">
-		<h4></h4>
+	<div class="header">my new home</div>
+	<div data-role="content">
+        <div class="photo"></div>
+        <div class="rating">
+        	<h3>overall rating</h3>
+        </div>
+        <div class="details">
+        	<h3>details</h3>
+            <hr />
+                <h2>$300,000</h2>
+                <h3>8150 Baltimore Avenue, College Park, MD 20740</h3>
+                <p>4 beds</p>
+                <p>3.5 baths</p>
+                <p>2500 sqft</p>
+                <p>0.5 acre lot</p>
+        </div>
+        <div class="description">
+        	<h3>description</h3>
+            <hr />	
+            <p>Your notes about the home would go here.</p>
+        </div>
+        <div class="ratings">
+        	<h3>ratings</h3>
+            <hr />	
+            <p>price</p>
+            <p>interior</p>
+            <p>exterior</p>
+        </div>
 	</div>
 </div>
 
 <div data-role="page" id="existingpage">
-	<div data-role="header">your ratings</div>
+	<div class="header">your ratings</div>
 	<div data-role="content">	
 		Content		
-	</div>
-	<div data-role="footer">
-		<h4></h4>
 	</div>
 </div>
 
