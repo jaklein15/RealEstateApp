@@ -64,7 +64,7 @@ div.ui-controlgroup-label {
 /*Header and Footer*/
 .header
 {
-	font-size: 2.5em;
+	font-size: 2em;
 	text-align: center;
 	background-color: #1C75BC;
 	height: 1.5em;
@@ -92,11 +92,20 @@ hr{
 	text-align: center;
 }
 
+.ui-input-text input{
+	width: 25%;	
+}
+
 .inputfield{
+	width: 100%;	
 }
 
 .inputfield input{	
+	width: 50px;
+}
 
+.inputfield p{
+	width: 75%;	
 }
 
 

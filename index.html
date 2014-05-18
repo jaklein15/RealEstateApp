@@ -13,7 +13,7 @@
 <body> 
 
 <div data-role="page" id="homepage">
-    <div class="maintitle"><p>my home<p></div>
+  <div class="maintitle"><p>my home<p></div>
     <div class="mainmenu">	
         <p><a href="#editpage">new</a><p>
         <p><a href="#existingpage">existing</a></p>
@@ -23,30 +23,37 @@
 <div data-role="page" id="editpage">
 	<div class="header">my new home</div>
 	<div data-role="content">
-        <div class="photo"></div>
+        <div class="photo">
+        	<input name="housephoto" type="image">
+        </div>
         <div class="rating">
         	<h3>overall rating</h3>
         </div>
         <div class="details">
         	<h3>details</h3>
             <hr />
-            <input name="price" type="text" value="$0">
-            <h4>address</h4>
-            <input name="street" type="text" value="street">
-           	<input name="city" type="text" value="city">
-            <input name="state" type="text" value="state">
-            <input name="zip" type="text" value="zip">
-            <h4>beds<h4> <input name="beds" type="text">
-            <h4>baths<h4> <input name="baths" type="text">
-            <h4>living Space<h4> <input name="livingsapce" type="text">
-            <h4>lot size<h4> <input name="lotsize" type="text">
+            <form>
+                <input name="price" type="text" value="$0">
+                <h4>address</h4>
+                <input name="street" type="text" value="street">
+                <input name="city" type="text" value="city">
+                <input name="state" type="text" value="state">
+                <input name="zip" type="text" value="zip">
+                <h4>facts</h4>
+                <input name="beds" type="text" value="# beds">
+                <input name="baths" type="text" value="# baths">
+                <input name="sqft" type="text" value="0 sqft">
+                <input name="acres" type="text" value="0 acres">
+            </form>
         </div>
         <br />
         <div class="description">
         	<h3>description</h3>
             <hr />	
-            <textarea name="description" cols="" rows="5"></textarea>
+            <textarea name="description" cols="" rows="5"></textarea>  
         </div>
+        <br />
+        <input type="button" value="save"/>
         <br />
         <div class="ratings">
         	<h3>ratings</h3>
@@ -107,6 +114,8 @@
 		<h4>Page Footer</h4>
 	</div>
 </div>
-
+<script type="text/javascript">
+var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1");
+</script>
 </body>
 </html>
