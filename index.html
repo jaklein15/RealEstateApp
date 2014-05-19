@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>jQuery Mobile Web App</title>
+<link href="includes/stylesheet.css"rel="stylesheet" type="text/css"/>
 <link href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
 <script src="http://code.jquery.com/jquery-1.6.4.min.js" type="text/javascript"></script>
 <script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js" type="text/javascript"></script>
@@ -10,41 +11,40 @@
 <body> 
 
 <div data-role="page" id="pagehome">
-	<div data-role="header">
-		<h1>Page One</h1>
+	<div data-role="header" class="header">
+    	<div class="smallline"></div>
+        <div class="highlight"></div>
+		<div class="logo"></div>
+        <div class="highlight"></div>
+        <div class="smallline"></div>
+
 	</div>
 	<div data-role="content">	
 		<ul data-role="listview">
-			<li><a href="#pagenew">New</a></li>
-            <li><a href="#pageexisting">Existing</a></li>
+			<li><a href="#pagenew"><h3>New</h3><p>Add a New Home</p></a></li>
+            <li><a href="#pageexisting"><h3>Existing</h3><p>View Your List of Homes</p></a></li>
 		</ul>		
 	</div>
-	<div data-role="footer" data-position="fixed">
-		<h4>Page Footer</h4>
-	</div>
+    <div data-role="footer" data-position="fixed"></div>
 </div>
 
 <div data-role="page" id="pagenew">
 	<div data-role="header">
+   		<a href="#pagehome"data-role="button" data-icon="back" data-iconpos="left">Back</a>
 		<h1>New</h1>
 	</div>
 	<div data-role="content">	
 		Content		
 	</div>
-	<div data-role="footer" data-position="fixed">
-		<h4><a href="#pagehome"data-role="button" data-icon="back" data-iconpos="left">Back</a></h4>
-	</div>
 </div>
 
 <div data-role="page" id="pageexisting">
 	<div data-role="header">
+    	<a href="#pagehome"data-role="button" data-icon="back" data-iconpos="left">Back</a>
 		<h1>Existing</h1>
 	</div>
 	<div data-role="content">	
 		Content		
-	</div>
-	<div data-role="footer" data-position="fixed">
-		<h4><a href="#pagehome"data-role="button" data-icon="back" data-iconpos="left">Back</a></h4>
 	</div>
 </div>
 
