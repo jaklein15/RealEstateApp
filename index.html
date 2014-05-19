@@ -2,120 +2,82 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Real Estate App</title>
-<link rel="stylesheet" href="includes/blue.css" />
-<link rel="stylesheet" href="includes/blue.min.css" />
-<link rel="stylesheet" href="includes/jquery.mobile.icons.min.css" />
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile.structure-1.4.2.min.css" />
-<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+<title>jQuery Mobile Web App</title>
+<link href="includes/stylesheet.css" rel="stylesheet" type="text/css"/>
+<link href="../jquery-mobile/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="../jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="../jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
 </head> 
 <body> 
 
-<div data-role="page" id="homepage">
-  <div class="maintitle"><p>my home<p></div>
-    <div class="mainmenu">	
-        <p><a href="#editpage">new</a><p>
-        <p><a href="#existingpage">existing</a></p>
-    </div>
-</div>
-
-<div data-role="page" id="editpage">
-	<div class="header">my new home</div>
-	<div data-role="content">
-        <div class="photo">
-        	<input name="housephoto" type="image">
-        </div>
-        <div class="rating">
-        	<h3>overall rating</h3>
-        </div>
-        <div class="details">
-        	<h3>details</h3>
-            <hr />
-            <form>
-                <input name="price" type="text" value="$0">
-                <h4>address</h4>
-                <input name="street" type="text" value="street">
-                <input name="city" type="text" value="city">
-                <input name="state" type="text" value="state">
-                <input name="zip" type="text" value="zip">
-                <h4>facts</h4>
-                <input name="beds" type="text" value="# beds">
-                <input name="baths" type="text" value="# baths">
-                <input name="sqft" type="text" value="0 sqft">
-                <input name="acres" type="text" value="0 acres">
-            </form>
-        </div>
-        <br />
-        <div class="description">
-        	<h3>description</h3>
-            <hr />	
-            <textarea name="description" cols="" rows="5"></textarea>  
-        </div>
-        <br />
-        <input type="button" value="save"/>
-        <br />
-        <div class="ratings">
-        	<h3>ratings</h3>
-            <hr />	
-            <p>price</p>
-            <p>interior</p>
-            <p>exterior</p>
-        </div>
-	</div>
-</div>
-
-<div data-role="page" id="homepage">
-	<div class="header">your home name here</div>
-	<div data-role="content">
-        <div class="photo"></div>
-        <div class="rating">
-        	<h3>overall rating</h3>
-        </div>
-        <div class="details">
-        	<h3>details</h3>
-            <hr />
-            <h2>$300,000</h2>
-            <h3>8150 Baltimore Avenue, College Park, MD 20740</h3>
-            <p>4 beds, 3.5 baths, 2500 sqft, 0.5 acre lot</p>
-        </div>
-        <br />
-        <div class="description">
-        	<h3>description</h3>
-            <hr />	
-            <p>Your notes about the home would go here.</p>
-        </div>
-        <br />
-        <div class="ratings">
-        	<h3>ratings</h3>
-            <hr />	
-            <p>price</p>
-            <p>interior</p>
-            <p>exterior</p>
-        </div>
-	</div>
-</div>
-
-<div data-role="page" id="existingpage">
-	<div class="header">your ratings</div>
-	<div data-role="content">	
-		Content		
-	</div>
-</div>
-
-<div data-role="page" id="page3">
+<div data-role="page" id="pagehome">
 	<div data-role="header">
-		<h1>Page Three</h1>
+		<h1>Home</h1>
+	</div>
+	<div data-role="content">	
+		<ul data-role="listview">
+			<li><a href="#pagenew">
+            <h3>New</h3>
+            <p>Add a New Home</p>
+            </a> </li>
+            <li><a href="#pageexisting">
+            <h3>Existing</h3>
+            <p>View List of Saved Homes</p>
+            </a></li>
+		</ul>		
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<h4>footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="pagenew">
+	<div data-role="header">
+		<h1>Home Details</h1>
+	</div>
+	<div data-role="content">	
+		<div class="ui-grid-a">
+        	<div class="ui-block-a">
+            	<img src="includes/images/CartoonHouse.jpg" width="95%">
+            </div>
+			<div class="ui-block-b">
+            	<h1>New Home Name</h1>
+                <h1>Your Price Here</h1>
+                <h3>Address, City, State, Zip</h3>
+               
+            </div>
+        </div>
+        <br />
+        <ul data-role="listview" id="newhomemenu">
+			<li><a href="#editratingcost">
+            <h3>Cost</h3>
+            <p>Rating: 0/5</p>
+            </a> </li>
+            <li><a href="#editratinginterior">
+            <h3>Interior</h3>
+            <p>Rating: 0/5</p>
+            <li><a href="#editratinginterior">
+            <h3>Exterior</h3>
+            <p>Rating: 0/5</p>
+            </a></li>
+		</ul>		
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<h4><a href="#pagehome" data-role="button" data-icon="back" data-iconpos="left">Back</a><h4>
+	</div>
+</div>
+
+<div data-role="page" id="pageexisting">
+	<div data-role="header">
+		<h1>Existing</h1>
 	</div>
 	<div data-role="content">	
 		Content		
 	</div>
-	<div data-role="footer">
-		<h4>Page Footer</h4>
+	<div data-role="footer" data-position="fixed">
+		<h4><a href="#pagehome" data-role="button" data-icon="back" data-iconpos="left">Back</a><h4>
 	</div>
 </div>
-<script type="text/javascript">
-var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1");
-</script>
+
 </body>
 </html>

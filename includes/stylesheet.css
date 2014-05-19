@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+
+.ui-content{
+	margin: 0px;
+}
+
+#newhomemenu {
+	padding: 10px;	
+}
+
+.ui-listview li{
+	border-radius: 5px;
+	padding-bottom: 5px;
+}
