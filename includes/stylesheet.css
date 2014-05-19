@@ -4,19 +4,22 @@
 /*General Settings*/
 
 .ui-page{
-	
+
 }
 
 .ui-body-c{
-
+	
 }
 
 .ui-page .ui-header{
-	background: #1C75BC;	
+	background: #1C75BC;
+	text-shadow: none;
+	border: none;	
 }
 
 .ui-content{
-	
+	text-shadow: none;
+	color: #F2F2F2;
 }
 
 .ui-listview{
@@ -27,6 +30,7 @@
 	background: none;
 	border: none;
 	margin: 5px;	
+	text-shadow: none;
 }
 
 .ui-listview .ui-li a{
@@ -48,7 +52,7 @@
 /*Home Page*/
 
 
-#pagehome, #pagenew, #pageexisting{
+#pagehome, #pagenew, #pageexisting, #pageeditdetails, #pageeditratings{
 	background: #29A8E0;
 	border: none;
 
