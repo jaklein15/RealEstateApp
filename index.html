@@ -11,19 +11,38 @@
 <body> 
 
 <div data-role="page" id="pagehome">
-	<div data-role="content">	
-		<ul data-role="listview">	  
-			<li><a href="#pagenew"><h3>New</h3><p>Add a New Home</p></a></li>
-            <li><a href="#pageexisting"><h3>Existing</h3><p>View Your List of Homes</p></a></li>
-		</ul>		
+	<div data-role="content" align="center">
+    	<div class="login">
+       		<div class="logininput">
+            	<input type="text" name="username" id="username" value="" placeholder="username"/>
+                <input type="password" name="passwordinput" id="passwordinput" value=""  placeholder="password"/>
+            </div>
+            <a href="#pagelist" data-role="button">Log In</a>
+       	</div>	
 	</div>
-    <div data-role="footer" data-position="fixed"></div>
+</div>
+
+<div data-role="page" id="pagelist">
+	<div data-role="header">
+		<h1>Existing</h1>
+	</div>
+	<div data-role="content" align="center">	
+		<h2>Uh oh! It looks like you don't have any houses yet. Click "Add New" to add a new home!</h2>		
+        <div data-role="controlgroup" data-type="horizontal">
+                <a href="#pagenew" data-role="button">Add New</a>
+        </div>
+    </div>
 </div>
 
 <div data-role="page" id="pagenew">
-	<div data-role="header">
-	    
-    	<h1>Add a New Home</h1>
+	<div data-role="header">    
+    	<h1>Details</h1>
+    </div>
+    <div data-role="navbar">
+        <ul>
+          <li><a href="#pagenew">Details</a></li>
+          <li><a href="#pageeditratings">Ratings</a></li>
+        </ul>
     </div>
     <div data-role="content" align="center">
     	<input type="text" name="name" id="name" placeholder="Give your home a name"/>
@@ -90,68 +109,75 @@
             <option value="WY">Wyoming</option>
             </select> 
         </div>
+     </div>
         <input type="text" name="zip" id="zip" placeholder="zip"/>
         
         <h3>info</h3>
 
           <select name="selectmenubeds" id="selectmenubeds">
-            <option value="0">0 beds</option>
+            <option value="0">0 bed</option>
             <option value="1">1 bed</option>
-            <option value="2">2 beds</option>
-            <option value="3">3 beds</option>
-            <option value="4">4 beds</option>
-            <option value="5">5 beds</option>
-            <option value="6">6 beds</option>
-            <option value="7">7 beds</option>
-            <option value="8">8 beds</option>
-            <option value="9">9 beds</option>
-            <option value="10">10 beds</option>
+            <option value="2">2 bed</option>
+            <option value="3">3 bed</option>
+            <option value="4">4 bed</option>
+            <option value="5">5 bed</option>
+            <option value="6">6 bed</option>
+            <option value="7">7 bed</option>
+            <option value="8">8 bed</option>
+            <option value="9">9 bed</option>
+            <option value="10">10 bed</option>
           </select>
-        
-          
+           
           <select name="selectmenubaths" id="selectmenubaths">
-            <option value="0">0 baths</option>
+            <option value="0">0 bath</option>
+            <option value="0.5">0.5 bath</option>
             <option value="1">1 bath</option>
-            <option value="2">2 baths</option>
-            <option value="3">3 baths</option>
-            <option value="4">4 baths</option>
-            <option value="5">5 baths</option>
-            <option value="6">6 baths</option>
-            <option value="7">7 baths</option>
-            <option value="8">8 baths</option>
-            <option value="9">9 baths</option>
-            <option value="10">10 baths</option>
+            <option value="1.5">1.5 bath</option>
+            <option value="2.5">2 bath</option>
+            <option value="3">2.5 bath</option>
+            <option value="3">3 bath</option>
+            <option value="3.5">3.5 bath</option>
+            <option value="4">4 bath</option>
+            <option value="4.5">4.5 bath</option>
+            <option value="5">5 bath</option>
+            <option value="5.5">5.5 bath</option>
+            <option value="6">6 bath</option>
+            <option value="6.5">6.5 bath</option>
+            <option value="7">7 bath</option>
+            <option value="7.5">7.5 bath</option>
+            <option value="8">8 bath</option>
+            <option value="8.5">8.5 bath</option>
+            <option value="9">9 bath</option>
+            <option value="9.5">9.5 bath</option>
+            <option value="10">10 bath</option>
           </select>
-          
-         
-        
+
     	<h3>description</h3> 
     	<textarea cols="40" rows="8" name="description" id="description" placeholder="Additional Notes"></textarea>
         <br />
         
         <div data-role="controlgroup" data-type="horizontal">
-         	<a href="#pagehome" data-role="button" data-icon="home" data-iconpos="left">Home</a>
             <a href="#" data-role="button">Save</a>
-            <a href="#" data-role="button" data-icon="star" data-iconpos="left">Ratings</a>
+            <a href="#pagelist" data-role="button">Cancel</a>
         </div>
     </div>
 </div>
 
-<div data-role="page" id="pageexisting">
-	<div data-role="header">
-		<h1>Existing</h1>
-	</div>
-	<div data-role="content">	
-		Content		
-	</div>
-</div>
-
 <div data-role="page" id="pageeditratings">
 	<div data-role="header">
-		<h1>My Ratings</h1>
+		<h1>Ratings</h1>
 	</div>
-	<div data-role="content">	
-		Content		
+    <div data-role="navbar">
+        <ul>
+          <li><a href="#pagenew">Details</a></li>
+          <li><a href="#pageeditratings">Ratings</a></li>
+        </ul>
+    </div>
+	<div data-role="content" align="center">	
+        <div data-role="controlgroup" data-type="horizontal">
+            <a href="#" data-role="button">Save</a>
+            <a href="#pagelist" data-role="button">Cancel</a>
+        </div>	
 	</div>
 </div>
 

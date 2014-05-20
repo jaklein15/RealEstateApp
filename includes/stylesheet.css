@@ -22,29 +22,6 @@
 	color: #F2F2F2;
 }
 
-.ui-listview{
-	border: none;
-}
-
-.ui-listview .ui-li{
-	background: none;
-	border: none;
-	margin: 5px;	
-	text-shadow: none;
-}
-
-.ui-listview .ui-li a{
-	background: rgba(255, 255, 255, .6);
-	border-radius: 5px;
-	margin-top: 10px;
-}
-
-.ui-listview .ui-li a:hover{
-	background: rgba(255, 255, 255, .9);
-	border-radius: 5px;
-	
-}
-
 .ui-footer{
 	
 }
@@ -52,29 +29,20 @@
 /*Home Page*/
 
 
-#pagehome, #pagenew, #pageexisting, #pageeditdetails, #pageeditratings{
+#pagehome, #pagelist, #pagenew, #pageeditdetails, #pageeditratings{
 	background: #29A8E0;
 	border: none;
 
 }
 
-.header{
-	height: 250px;	
+.login{
+	background: #1C75BC;
+	border-radius: 25px;
+	padding: 25px;	
 }
 
-.logo{
-	height: 208px;
-	background: #1C75BC;	
-}
-
-.highlight{
-	height:1px;
-	background: #FFFFFF;	
-}
-
-.smallline{
-	height: 20px;
-	background: #1C75BC;	
+.logininput {
+	padding-bottom: 30px;
 }
 
 
