@@ -36,11 +36,12 @@
 
 <div data-role="page" id="pagenew">
 	<div data-role="header">    
-    	<h1>Details</h1>
+    	<h1>About</h1>
     </div>
     <div data-role="navbar">
-        <ul>
-          <li><a href="#pagenew">Details</a></li>
+       <ul>
+          <li><a href="#pagenew" class="ui-btn-active ui-state-persist">About</a></li>
+          <li><a href="#pageeditdetails">Details</a></li>
           <li><a href="#pageeditratings">Ratings</a></li>
         </ul>
     </div>
@@ -111,10 +112,22 @@
         </div>
      </div>
         <input type="text" name="zip" id="zip" placeholder="zip"/>
-        
-        <h3>info</h3>
+    </div>
+</div>
 
-          <select name="selectmenubeds" id="selectmenubeds">
+<div data-role="page" id="pageeditdetails">
+	<div data-role="header">
+		<h1>Details</h1>
+	</div>
+    <div data-role="navbar">
+        <ul>
+          <li><a href="#pagenew">About</a></li>
+          <li><a href="#pageeditdetails" class="ui-btn-active ui-state-persist">Details</a></li>
+          <li><a href="#pageeditratings">Ratings</a></li>
+        </ul>
+    </div>
+	<div data-role="content" align="center">	
+     	<select name="selectmenubeds" id="selectmenubeds">
             <option value="0">0 bed</option>
             <option value="1">1 bed</option>
             <option value="2">2 bed</option>
@@ -126,9 +139,9 @@
             <option value="8">8 bed</option>
             <option value="9">9 bed</option>
             <option value="10">10 bed</option>
-          </select>
-           
-          <select name="selectmenubaths" id="selectmenubaths">
+        </select>
+       
+      	<select name="selectmenubaths" id="selectmenubaths">
             <option value="0">0 bath</option>
             <option value="0.5">0.5 bath</option>
             <option value="1">1 bath</option>
@@ -150,17 +163,20 @@
             <option value="9">9 bath</option>
             <option value="9.5">9.5 bath</option>
             <option value="10">10 bath</option>
-          </select>
-
-    	<h3>description</h3> 
-    	<textarea cols="40" rows="8" name="description" id="description" placeholder="Additional Notes"></textarea>
+      	</select>
+        
         <br />
         
-        <div data-role="controlgroup" data-type="horizontal">
-            <a href="#" data-role="button">Save</a>
-            <a href="#pagelist" data-role="button">Cancel</a>
-        </div>
-    </div>
+      	<input type="text" name="textinputhomesize" id="textinputhomesize" value="" placeholder="Home Size (sqft)"  />
+        
+        <br />
+    
+        <input type="text" name="textinputlotsize" id="textinputlotsize" value="" placeholder="Lot Size"  />
+        
+      	<h3>description</h3> 
+    
+   		<textarea cols="40" rows="8" name="description" id="description" placeholder="Additional Notes"></textarea>
+	</div>
 </div>
 
 <div data-role="page" id="pageeditratings">
@@ -168,16 +184,14 @@
 		<h1>Ratings</h1>
 	</div>
     <div data-role="navbar">
-        <ul>
-          <li><a href="#pagenew">Details</a></li>
-          <li><a href="#pageeditratings">Ratings</a></li>
+         <ul>
+          <li><a href="#pagenew">About</a></li>
+          <li><a href="#pageeditdetails">Details</a></li>
+          <li><a href="#pageeditratings" class="ui-btn-active ui-state-persist" >Ratings</a></li>
         </ul>
     </div>
-	<div data-role="content" align="center">	
-        <div data-role="controlgroup" data-type="horizontal">
-            <a href="#" data-role="button">Save</a>
-            <a href="#pagelist" data-role="button">Cancel</a>
-        </div>	
+    <div data-role="content" align="center">	
+    
 	</div>
 </div>
 
