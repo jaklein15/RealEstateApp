@@ -56,7 +56,7 @@
         <div class="ui-grid-a">
           <div class="ui-block-a" style="width:60%; padding-top: 7px; padding-right: 5%">
          	  <input type="text" name="city" id="city" placeholder="city"/></div>
-          <div class="ui-block-c" style="width:35%;">
+          <div class="ui-block-b" style="width:35%;">
           	<select name="selectmenustate" id="selectmenustate" data-mini="true">
          	<option value="none">State</option>
             <option value="AL">Alabama</option>
@@ -192,8 +192,154 @@
           <li><a href="#pageeditratings" class="ui-btn-active ui-state-persist" >Ratings</a></li>
         </ul>
     </div>
-    <div data-role="content" align="center">	
-    
+    <div data-role="content" align="center">
+        
+      <div data-role="collapsible-set">
+      
+      
+        <div data-role="collapsible">
+          <h3>Price</h3>
+          <div class="ui-grid-a">
+        	<div class="ui-block-a" style="width:70%; padding-top: 7px">  	
+        	    <input type="range" name="sliderprice" id="sliderprice" value="0" min="0" max="5" />	
+      	    </div>
+        	<div class="ui-block-b" style="width:30%">
+        	    <select name="selectmenuprice" id="selectmenuprice">
+        	        <option value="0">x 0</option>
+        	        <option value="1">x 1</option>
+        	        <option value="2">x 2</option>
+                    <option value="3">x 3</option>
+      	        </select> 	
+            </div>
+          </div>
+        </div>
+        
+        
+        <div data-role="collapsible">
+          <h3>Taxes</h3>
+          <div class="ui-grid-a">
+        	<div class="ui-block-a" style="width:70%; padding-top: 7px">  	
+        	    <input type="range" name="slidertaxes" id="slidertaxes" value="0" min="0" max="5" />	
+      	    </div>
+        	<div class="ui-block-b" style="width:30%">
+        	    <select name="selectmenutaxes" id="selectmenutaxes">
+        	        <option value="0">x 0</option>
+        	        <option value="1">x 1</option>
+        	        <option value="2">x 2</option>
+                    <option value="3">x 3</option>
+      	        </select>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div data-role="collapsible">
+          <h3>Neighborhood Dues</h3>
+          <div class="ui-grid-a">
+        	<div class="ui-block-a" style="width:70%; padding-top: 7px">  	
+        	    <input type="range" name="sliderdues" id="sliderdues" value="0" min="0" max="5" />	
+      	    </div>
+        	<div class="ui-block-b" style="width:30%">
+        	    <select name="selectmenudues" id="selectmenudues">
+        	        <option value="0">x 0</option>
+        	        <option value="1">x 1</option>
+        	        <option value="2">x 2</option>
+                    <option value="3">x 3</option>
+      	        </select>
+            </div>
+          </div>
+        </div>
+        
+         <div data-role="collapsible">
+          <h3>Assessments</h3>
+          <div class="ui-grid-a">
+        	<div class="ui-block-a" style="width:70%; padding-top: 7px">  	
+        	    <input type="range" name="sliderassessments" id="sliderassessments" value="0" min="0" max="5" />	
+      	    </div>
+        	<div class="ui-block-b" style="width:30%">
+        	    <select name="selectmenuassessments" id="selectmenuassessments">
+        	        <option value="0">x 0</option>
+        	        <option value="1">x 1</option>
+        	        <option value="2">x 2</option>
+                    <option value="3">x 3</option>
+      	        </select>
+            	
+            </div>
+          </div>
+        </div>
+        
+         <div data-role="collapsible">
+          <h3>Area</h3>
+          <div class="ui-grid-a">
+        	<div class="ui-block-a" style="width:70%; padding-top: 7px">  	
+        	    <input type="range" name="sliderarea" id="sliderarea" value="0" min="0" max="5" />	
+      	    </div>
+        	<div class="ui-block-b" style="width:30%">
+        	    <select name="selectmenuarea" id="selectmenuarea">
+        	        <option value="0">x 0</option>
+        	        <option value="1">x 1</option>
+        	        <option value="2">x 2</option>
+                    <option value="3">x 3</option>
+      	        </select>
+            	
+            </div>
+          </div>
+        </div>
+        
+         <div data-role="collapsible">
+          <h3>Neighborhood Appearance</h3>
+          <div class="ui-grid-a">
+        	<div class="ui-block-a" style="width:70%; padding-top: 7px">  	
+        	    <input type="range" name="sliderneighborhoodappearence" id="sliderneighborhoodappearence" value="0" min="0" max="5" />	
+      	    </div>
+        	<div class="ui-block-b" style="width:30%">
+        	    <select name="selectmenuneighborhoodappearence" id="selectmenuneighborhoodappearence">
+        	        <option value="0">x 0</option>
+        	        <option value="1">x 1</option>
+        	        <option value="2">x 2</option>
+                    <option value="3">x 3</option>
+      	        </select>
+            	
+            </div>
+          </div>
+        </div>
+        
+         <div data-role="collapsible">
+          <h3>Location in Neighborhood</h3>
+          <div class="ui-grid-a">
+        	<div class="ui-block-a" style="width:70%; padding-top: 7px">  	
+        	    <input type="range" name="sliderlocationinneighborhood" id="sliderlocationinneighborhood" value="0" min="0" max="5" />	
+      	    </div>
+        	<div class="ui-block-b" style="width:30%">
+        	    <select name="selectmenulocationinneighborhood" id="selectmenulocationinneighborhood">
+        	        <option value="0">x 0</option>
+        	        <option value="1">x 1</option>
+        	        <option value="2">x 2</option>
+                    <option value="3">x 3</option>
+      	        </select>
+            	
+            </div>
+          </div>
+        </div>
+        
+         <div data-role="collapsible">
+          <h3>Schools</h3>
+          <div class="ui-grid-a">
+        	<div class="ui-block-a" style="width:70%; padding-top: 7px">  	
+        	    <input type="range" name="sliderschools" id="sliderschools" value="0" min="0" max="5" />	
+      	    </div>
+        	<div class="ui-block-b" style="width:30%">
+        	    <select name="selectmenuschools" id="selectmenuschools">
+        	        <option value="0">x 0</option>
+        	        <option value="1">x 1</option>
+        	        <option value="2">x 2</option>
+                    <option value="3">x 3</option>
+      	        </select>
+            	
+            </div>
+          </div>
+        </div>
+      </div>		
 	</div>
 </div>
 
